@@ -3,7 +3,7 @@ const prompt = PromptSync()
 
 export default function attPaciente(pacientes){
     console.log("\n-------------------------------------\n")
-    let id = Number(prompt("Qual o ID do paciente que gostaria de remover? "))
+    let id = Number(prompt("Qual o ID do paciente que gostaria de atualizar? "))
     if(isNaN(id)){
         console.log("Digite um ID válido!")
         return false
