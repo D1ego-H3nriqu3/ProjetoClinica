@@ -2,6 +2,7 @@ import PromptSync from "prompt-sync";
 const prompt = PromptSync()
 import pacientes from "./pacientes.js";
 import adicionarPaciente from "./adicionarPaciente.js";
+import listarPacientes from "./listarPacientes.js";
 
 let indice = true
 
@@ -18,10 +19,9 @@ do {
         case "1":
         let nPaciente = adicionarPaciente.coletaInformacoes(pacientes)
         adicionarPaciente.addPaciente(pacientes, nPaciente)
-        console.log(pacientes)
         break
         case "2":
-
+        listarPacientes(pacientes)
         break
         case "3":
 
