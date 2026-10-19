@@ -5,6 +5,7 @@ import adicionarPaciente from "./adicionarPaciente.js";
 import listarPacientes from "./listarPacientes.js";
 import removerPaciente from "./removerPaciente.js";
 import attPaciente from "./atualizarPaciente.js";
+import relatorioPacientes from "./relatorioPacientes.js";
 
 let indice = true
 
@@ -32,7 +33,7 @@ do {
         removerPaciente(pacientes)
         break
         case "5":
-
+        relatorioPacientes(pacientes)
         break
         case "0":
             indice = false

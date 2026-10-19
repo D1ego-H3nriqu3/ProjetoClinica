@@ -38,11 +38,12 @@ export default function attPaciente(pacientes){
         }while(resposta === "sim")
     }
     pacientes[indice].nome = nNome || pacientes[indice].nome
-    pacientes[indice].idade = nIdade || pacientes[indice].idade
+    pacientes[indice].idade = nIdadeAtt || pacientes[indice].idade
     if(nAlergias.length === 0){
         pacientes[indice].alergias = pacientes[indice].alergias
     }else{
         pacientes[indice].alergias = nAlergias
     }
+    console.log("\nPaciente atualizado!")
 }
 }
