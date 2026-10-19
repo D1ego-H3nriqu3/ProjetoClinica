@@ -3,6 +3,7 @@ const prompt = PromptSync()
 import pacientes from "./pacientes.js";
 import adicionarPaciente from "./adicionarPaciente.js";
 import listarPacientes from "./listarPacientes.js";
+import removerPaciente from "./removerPaciente.js";
 
 let indice = true
 
@@ -27,7 +28,7 @@ do {
 
         break
         case "4":
-
+        removerPaciente(pacientes)
         break
         case "5":
 
